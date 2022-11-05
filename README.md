@@ -2,7 +2,7 @@
 Using Clustering, Classification and Ranking Method for Recommendation System with H&amp;M Customer Data
 
 ### Intro
-This is a group project from a Data Science course at University of Washington.
+This is a group project from a Data Science course at University of Washington. (IMT 575: Data Science III: Scaling, Applications, and Ethics)
 Our "H&M Personalized Fashion Recommendations" data source is from this kaggle website: https://www.kaggle.com/code/rahulappana/h-m-recommendation
 
 ### I. Data Overview
