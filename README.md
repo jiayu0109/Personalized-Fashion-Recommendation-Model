@@ -50,7 +50,21 @@ We performed Kmeans clustering to differentiate customers into groups with simil
 
 To choose a proper K number, we used the **Elbow method** with inertia (defined as the sum of squared distances to their closest cluster center) as the criteria. Finally, we created 10 clusters to differentiate our customers.
 
+### VII. Logistic Regression
+Referring to Wang and Han's "New Financial E-Commerce Model for Small and Medium-Sized Enterprise Financing Based on Multiple Linear Logistic Regression", we decided to perform logistic regression to predict whether the customer will purchase again in the future by using PCA components, customer groups, and the customer value tag.
 
+The final result has an accuracy of 0.64 using cross-validation. Furthermore, by validating our prediction with the customer’s last purchase, our prediction covers 84.3% percent of the total latest purchases.
+
+### VIII. Product Recommendation
+Based on our prediction, we divided our recommendation into two categories:
+(1) Customers who have purchase history and are willing to purchase again: We map each customer to a cluster and recommend **top 3 most frequently purchased items** in 7 days in each cluster. 
+(2) Customers who won't purchase in the future or a new user: Use postal code and Kmean clusters to rank the top purchases.
+
+### Limitations/Future Direction
+Given the shortage of time and resource, we conclude three significant limitations of this project.
+1. Disregard the time sensitivity: For future developments, we can combine time-series forecasting methods with machine learning models to make predictions with the time effect. 
+2. Lack of validation for purchase tendencey: Instead of PCA, we would try forward selection model to select features since it'll provide better accuracy of recommendations and verify the effectiveness of our system.
+3. Fail to provide recommendations for new accounts: It is challenging to recommend items for customers without any data. We'd like to consider top ten most popular products from H&M in the past month as one of the metrics, along with postal code.
 
 
 
